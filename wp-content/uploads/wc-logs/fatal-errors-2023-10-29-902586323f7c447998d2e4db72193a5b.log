@@ -1,0 +1,1142 @@
+2023-10-29T12:46:38+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in C:\xampp\htdocs\wp_project\wp-content\plugins\elementor\includes\template-library\sources\local.php:897
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-content\plugins\elementor\includes\template-library\manager.php(477): Elementor\TemplateLibrary\Source_Local->import_template('contact-form-05...', 'C:\\xampp\\htdocs...')
+#1 [internal function]: Elementor\TemplateLibrary\Manager->import_template(Array)
+#2 C:\xampp\htdocs\wp_project\wp-content\plugins\elementor\includes\template-library\manager.php(595): call_user_func(Array, Array)
+#3 C:\xampp\htdocs\wp_project\wp-content\plugins\elementor\includes\template-library\manager.php(628): Elementor\TemplateLibrary\Manager->handle_ajax_request('import_template', Array)
+#4 [internal function]: Elementor\TemplateLibrary\Manager->Elementor\TemplateLibrary\{closure}(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 C:\xampp\htdocs\wp_project\wp-content\plugins\elementor\core\common\modules\ajax\module.php(176): call_user_func(Object(Closure), Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#6 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#7 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wp_project\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#10 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\elementor\includes\template-library\sources\local.php on line 897
+
+2023-10-29T20:28:39+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:29:54+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:30:48+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:31:41+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:31:41+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:32:20+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:32:23+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:32:41+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:32:42+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:32:51+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:32:53+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:32:58+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:00+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:15+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:17+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:17+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:18+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:20+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:20+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:22+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:36+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:36+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:37+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:33:39+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:43:07+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:43:08+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:43:08+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:46:53+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('woocommerce_pro...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:46:54+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('woocommerce_pro...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:48:40+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:48:40+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:48:40+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T20:48:40+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('woocommerce_pro...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:40:02+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('woocommerce_pro...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:40:03+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:40:03+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:40:03+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:41:34+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:41:34+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:41:34+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:41:34+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('woocommerce_pro...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:43:32+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:43:32+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('woocommerce_pro...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:43:32+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:43:33+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:45:32+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('ocean_contact_i...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:45:32+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:45:32+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('nav_menu', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
+2023-10-29T21:45:32+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): MABEL_WCBB\Code\Controllers\Public_Controller->add_bar_to_footer('')
+#1 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wp_project\wp-includes\general-template.php(3069): do_action('wp_footer')
+#4 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(654): wp_footer()
+#5 C:\xampp\htdocs\wp_project\wp-includes\rest-api\endpoints\class-wp-rest-widget-types-controller.php(600): WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe('woocommerce_pro...', Array)
+#6 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1194): WP_REST_Widget_Types_Controller->render(Object(WP_REST_Request))
+#7 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widget-t...', Array, NULL)
+#8 C:\xampp\htdocs\wp_project\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\wp_project\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/wp/v2/widget-t...')
+#10 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#11 C:\xampp\htdocs\wp_project\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\wp_project\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#14 C:\xampp\htdocs\wp_project\wp-includes\class-wp.php(779): WP->parse_request('')
+#15 C:\xampp\htdocs\wp_project\wp-includes\functions.php(1335): WP->main('')
+#16 C:\xampp\htdocs\wp_project\wp-blog-header.php(16): wp()
+#17 C:\xampp\htdocs\wp_project\index.php(17): require('C:\\xampp\\htdocs...')
+#18 {main}
+  thrown in C:\xampp\htdocs\wp_project\wp-content\plugins\woo-mobile-bottom-bar\code\controllers\class-public-controller.php on line 42
+
